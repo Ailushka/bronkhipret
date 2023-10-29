@@ -14,6 +14,7 @@
 .page {
   max-width: 929px;
   font-family: 'Nunito', Arial, sans-serif;
+  font-weight: 400;
   line-height: normal;
   background: var(--clr-white);
   color: var(--clr-white);
@@ -238,17 +239,21 @@ html:has(.popup_opened) {
 
 /* Popup */
 
+.cta__content {
+  position: relative;
+}
+
 .popup {
-  position: fixed;
-  display: flex;
+  position: absolute;
+  /*display: flex;*/
   width: 100%;
   height: 100%;
   z-index: 1;
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, .25);
-  justify-content: flex-start;
-  align-items: center;
+  /*justify-content: flex-start;*/
+  /*align-items: center;*/
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   visibility: hidden;
@@ -305,7 +310,7 @@ html:has(.popup_opened) {
 
 .popup_type_about[id="about-general"] .about {
   right: -10%;
-  top: 4.5%;
+  top: 6.5%;
 }
 
 .popup_type_about[id="about-info"] .about {
@@ -325,27 +330,27 @@ html:has(.popup_opened) {
 
 .popup_type_about[id="about-components"] .about {
   right: -14%;
-  top: 11%;
+  top: 16%;
 }
 
 .popup_type_about[id="about-inhalation"] .about {
   right: -12%;
-  top: 22%;
+  top: 33%;
 }
 
 .popup_type_about[id="about-drops-forms"] .about {
   right: -11%;
-  top: 22%;
+  top: 33%;
 }
 
 .popup_type_about[id="about-peels-forms"] .about {
-  right: -14%;
-  top: 29%;
+  right: -12%;
+  top: 42%;
 }
 
 .popup_type_about[id="about-recommendations"] .about {
   left: -14%;
-  top: 29%;
+  top: 44%;
 }
 
 .about__text {
@@ -417,6 +422,72 @@ html:has(.popup_opened) {
 .popup_type_about[id="about-peels"] .about__image {
   width: clamp(5rem, 2.558rem + 10.02vw, 8.375rem);
   height: clamp(4.5rem, 2.284rem + 9.09vw, 7.563rem);
+}
+
+.about__doses {
+  padding: 0 8px;
+  margin: 0;
+  font-family: 'Verdana';
+  font-size: clamp(0.75rem, 0.433rem + 1.3vw, 1.188rem);
+  letter-spacing: -0.285px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #294707;
+}
+
+.doses {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  gap: 12.5px;
+  font-family: 'Verdana';
+  font-size: clamp(0.539rem, 0.347rem + 0.79vw, 0.803rem);
+  letter-spacing: -0.129px;
+  color: #000000;
+}
+
+.dose {
+  border-radius: 4.31px;
+  border: 1.231px solid #294707;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.dose__who {
+  padding: 0;
+  margin: 0;
+}
+
+.dose__quantity {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.dose__frequency {
+  position: relative;
+  padding: 0 0 0 19px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.dose__frequency:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 17px;
+  background-image: url('./images/peel_icon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0;
+  left: 0;
+}
+
+.qty-text {
+  font-size: clamp(0.346rem, 0.223rem + 0.5vw, 0.516rem);
+  font-weight: 400;
+  color: #294707;
 }
 
 @media (max-width: 600px) {
