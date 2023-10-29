@@ -297,6 +297,18 @@ html:has(.popup_opened) {
   background-position: center;
 }
 
+.popup_type_about[id="about-peels"] .popup__container {
+  background-image: url('./images/popup_4.png');
+}
+
+.popup_type_about[id="about-drops-forms"] .popup__container {
+  background-image: url('./images/popup_7.png');
+}
+
+.popup_type_about[id="about-peels-forms"] .popup__container {
+  background-image: url('./images/popup_8.png');
+}
+
 .button_type_close {
   position: absolute;
   top: 10.5%;
@@ -584,9 +596,6 @@ html:has(.popup_opened) {
   }
 }
 
-.button_type_about {
-
-}
 
 
 
