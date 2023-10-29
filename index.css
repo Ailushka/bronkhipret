@@ -396,7 +396,7 @@ html:has(.popup_opened) {
   letter-spacing: -0.65px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .popup_type_about[id="about-peels"] .about__text {
     letter-spacing: -0.1px;
   }
@@ -461,7 +461,7 @@ html:has(.popup_opened) {
   list-style-type: none;
   gap: 12.5px;
   font-family: 'Verdana';
-  font-size: clamp(0.539rem, 0.347rem + 0.79vw, 0.803rem);
+  font-size: clamp(0.1rem, 0.247rem + 0.79vw, 0.803rem);
   letter-spacing: -0.129px;
   color: #000000;
 }
@@ -541,6 +541,7 @@ html:has(.popup_opened) {
 
 .popup_type_about[id="about-drops-forms"] .about__text {
   margin-top: 0;
+  margin-bottom: 0;
   letter-spacing: -0.65px;
 }
 
@@ -548,6 +549,31 @@ html:has(.popup_opened) {
   position: absolute;
   bottom: 10%;
   right: 23%;
+}
+
+@media (max-width: 650px) {
+  .doses {
+    margin: 3px;
+  }
+  .popup_type_about[id="about-drops-forms"] .doses {
+    max-height: 120px;
+    gap: 3px;
+  }
+  .dose__frequency:before {
+    top: -24%;
+    width: 17px;
+    height: 15px;
+  }
+  .dose__qty .dose__frequency {
+    padding-left: 12px;
+  }
+  .dose__qty .dose__frequency:before {
+    width: 9px;
+    height: 9px;
+  }
+  .dose {
+    padding: 3px;
+  }
 }
 
 
