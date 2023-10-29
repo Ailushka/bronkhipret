@@ -297,8 +297,28 @@ html:has(.popup_opened) {
   background-position: center;
 }
 
+.popup_type_about[id="about-general"] .popup__container {
+  background-image: url('./images/popup_1.png');
+}
+
+.popup_type_about[id="about-info"] .popup__container {
+  background-image: url('./images/popup_2.png');
+}
+
+.popup_type_about[id="about-drops"] .popup__container {
+  background-image: url('./images/popup_3.png');
+}
+
 .popup_type_about[id="about-peels"] .popup__container {
   background-image: url('./images/popup_4.png');
+}
+
+.popup_type_about[id="about-components"] .popup__container {
+  background-image: url('./images/popup_5.png');
+}
+
+.popup_type_about[id="about-inhalation"] .popup__container {
+  background-image: url('./images/popup_6.png');
 }
 
 .popup_type_about[id="about-drops-forms"] .popup__container {
@@ -307,6 +327,10 @@ html:has(.popup_opened) {
 
 .popup_type_about[id="about-peels-forms"] .popup__container {
   background-image: url('./images/popup_8.png');
+}
+
+.popup_type_about[id="about-recommendations"] .popup__container {
+  background-image: url('./images/popup_9.png');
 }
 
 .button_type_close {
@@ -319,12 +343,6 @@ html:has(.popup_opened) {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-}
-
-@media (max-width: 600px) {
-  .popup__container {
-
-  }
 }
 
 .about {
