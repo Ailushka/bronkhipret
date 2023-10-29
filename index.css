@@ -458,6 +458,7 @@ html:has(.popup_opened) {
 .doses {
   display: flex;
   padding: 0;
+  margin: 3px;
   list-style-type: none;
   gap: 12.5px;
   font-family: 'Verdana';
@@ -552,15 +553,11 @@ html:has(.popup_opened) {
 }
 
 @media (max-width: 650px) {
-  .doses {
-    margin: 3px;
-  }
   .popup_type_about[id="about-drops-forms"] .doses {
     max-height: 120px;
     gap: 3px;
   }
   .dose__frequency:before {
-    top: -24%;
     width: 17px;
     height: 15px;
   }
@@ -573,6 +570,7 @@ html:has(.popup_opened) {
   }
   .dose {
     padding: 3px;
+    max-width: 98px;
   }
 }
 
