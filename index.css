@@ -472,6 +472,7 @@ html:has(.popup_opened) {
   border: 1.231px solid #294707;
   padding: 5px;
   box-sizing: border-box;
+  max-width: 150px;
 }
 
 .dose__who {
@@ -532,13 +533,14 @@ html:has(.popup_opened) {
 
 .dose__qty .qty-text {
   max-width: 30px;
+  line-height: 1;
 }
 
 .popup_type_about[id="about-drops-forms"] .doses {
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: 200px;
-  width: 70%;
+  max-height: 180px;
+  width: 75%;
 }
 
 .popup_type_about[id="about-drops-forms"] .about__text {
@@ -568,10 +570,11 @@ html:has(.popup_opened) {
   .dose__qty .dose__frequency:before {
     width: 9px;
     height: 9px;
+    top: 20%;
   }
   .dose {
     padding: 3px;
-    max-width: 98px;
+    max-width: 60%;
   }
 }
 
