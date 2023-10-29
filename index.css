@@ -34,6 +34,20 @@ html:has(.popup_opened) {
   position: static;
   overflow-x: hidden;
   overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+/* WebKit */
+.no-scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+@media (hover: hover) {
+  .no-scroll {
+    padding-right: 15px;
+  }
 }
 
 .list {
@@ -382,6 +396,12 @@ html:has(.popup_opened) {
   letter-spacing: -0.65px;
 }
 
+@media (max-width: 600px) {
+  .popup_type_about[id="about-peels"] .about__text {
+    letter-spacing: -0.1px;
+  }
+}
+
 .about__text_type_caption {
   margin-top: 0;
   font-size:clamp(0.75rem, 0.298rem + 1.86vw, 1.375rem);
@@ -490,9 +510,46 @@ html:has(.popup_opened) {
   color: #294707;
 }
 
-@media (max-width: 600px) {
-  .popup_type_about[id="about-peels"] .about__text {
-    letter-spacing: -0.1px;
-  }
+.dose__qty {
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
+
+.dose__qty .dose__frequency {
+  padding-left: 22px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.dose__qty .dose__frequency:before {
+  width: 19px;
+  height: 19px;
+  background-image: url('./images/drop_icon.svg');
+}
+
+.dose__qty .qty-text {
+  max-width: 30px;
+}
+
+.popup_type_about[id="about-drops-forms"] .doses {
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 200px;
+}
+
+.popup_type_about[id="about-drops-forms"] .about__text {
+  margin-top: 0;
+  letter-spacing: -0.65px;
+}
+
+.popup_type_about[id="about-drops-forms"] .about__image {
+  position: absolute;
+  bottom: 10%;
+  right: 23%;
+}
+
+
+
 
