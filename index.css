@@ -538,6 +538,7 @@ html:has(.popup_opened) {
   flex-direction: column;
   flex-wrap: wrap;
   max-height: 200px;
+  width: 70%;
 }
 
 .popup_type_about[id="about-drops-forms"] .about__text {
