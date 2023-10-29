@@ -549,6 +549,11 @@ html:has(.popup_opened) {
   letter-spacing: -0.65px;
 }
 
+.popup_type_about[id="about-peels-forms"] .about__text {
+  margin-bottom: 0;
+  letter-spacing: -0.65px;
+}
+
 .popup_type_about[id="about-drops-forms"] .about__image {
   position: absolute;
   bottom: 10%;
@@ -563,6 +568,7 @@ html:has(.popup_opened) {
   .dose__frequency:before {
     width: 17px;
     height: 15px;
+    top: -24%;
   }
   .dose__qty .dose__frequency {
     padding-left: 12px;
