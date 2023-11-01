@@ -56,7 +56,7 @@ html:has(.popup_opened) {
 }
 
 .container {
-  max-width: 929px;
+  max-width: 1557px;
   margin: 0 auto;
 }
 
@@ -262,8 +262,6 @@ html:has(.popup_opened) {
 
 .cta__content {
   position: relative;
-  max-width: 1200px;
-  margin: auto;
 }
 
 .popup {
