@@ -23,9 +23,9 @@
 }
 
 
-html:has(.popup_opened) {
-  overflow: hidden;
-}
+/*html:has(.popup_opened) {*/
+/*  overflow: hidden;*/
+/*}*/
 
 .no-scroll {
   width: initial;
