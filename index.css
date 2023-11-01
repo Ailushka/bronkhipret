@@ -12,11 +12,10 @@
 }
 
 .page {
-  max-width: 929px;
   font-family: 'Nunito', Arial, sans-serif;
   font-weight: 400;
   line-height: normal;
-  background: var(--clr-white);
+  background: linear-gradient(180deg, #97BE0D 2.15%, #E7EEC6 18.31%);
   color: var(--clr-white);
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
@@ -56,9 +55,13 @@ html:has(.popup_opened) {
   list-style-type: none;
 }
 
+.container {
+  max-width: 929px;
+  margin: 0 auto;
+}
+
 .bronkhipret {
   position: relative;
-  background: linear-gradient(180deg, #97BE0D 2.15%, #E7EEC6 18.31%);
 }
 
 .bronkhipret__header {
@@ -173,13 +176,17 @@ html:has(.popup_opened) {
   }
 }
 
+.cta__text-container {
+  background: linear-gradient(180deg, #2962A9 24.4%, #1A4478 89.59%);
+}
+
 .cta__text {
-  margin: 0;
+  margin: 0 auto;
   padding: 28px 90px 32px;
   font-size: 34.186px;
   font-weight: 600;
   text-align: center;
-  background: linear-gradient(180deg, #2962A9 24.4%, #1A4478 89.59%);
+  box-sizing: border-box;
 }
 
 .aim {
