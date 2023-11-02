@@ -38,12 +38,6 @@
   height: 0;
 }
 
-@media (hover: hover) {
-  .no-scroll {
-    /*padding-right: 15px;*/
-  }
-}
-
 .list {
   margin: 0;
   padding: 0;
