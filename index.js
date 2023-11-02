@@ -5,12 +5,15 @@
 const aboutButtons = document.querySelectorAll('.button_type_about');
 const closeButtons = document.querySelectorAll('.button_type_close');
 
+const scrollWidth = window.innerWidth - document.documentElement.clientWidth;
+
 const ESCAPE = 27;
 
 function openPopUp(popup) {
   popup.classList.add('popup_opened');
   popup.classList.add('transition');
   document.querySelector('.page').classList.add('no-scroll');
+  document.querySelector('.page').style.paddingRight = scrollWidth + 'px';
   document.addEventListener('click', closePopUpByOverlay);
   document.addEventListener('keydown', closePopUpByEsc);
 
@@ -20,6 +23,7 @@ function closePopUp(popup) {
   popup.classList.remove('popup_opened');
   popup.classList.remove('transition');
   document.querySelector('.page').classList.remove('no-scroll');
+  document.querySelector('.page').style.paddingRight = 0;
   document.removeEventListener('click', closePopUpByOverlay);
   document.removeEventListener('keydown', closePopUpByEsc);
 }
